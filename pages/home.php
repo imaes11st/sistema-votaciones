@@ -13,54 +13,22 @@
     <link
       rel="stylesheet"
       type="text/css"
-      href="/styles/styles.css"
+      href="styles/styles.css"
       media="screen"
     />
     <title>Home | Votaciones </title>
 </head>
 <body>
-    <div class="container" style="padding-top: 45px">
-        <h2>Elecciones Planchas Asamblea COOPSECON</h2>
-        <p class="card-text">Para votar por alguna plancha debera estar en el boton de votar de la plancha correspondiente.</p>
+    <div class="container" style="padding-top: 40px">
+        <h2>Bienvenid@</h2>
+        <p class="card-text">Al iniciar sesion queda registrada la asistencia a la asamblea, al final de la asamblea se realizara la votación</p>
     </div>
     <br>
+    <img src="img/coopsecon.jpeg" alt="Coopsecon">
     <br>
     <div class="container">
-        <div class="card" style="width: 12rem;">
-            <img src="../img/Group-Vector-PNG-Clipart.png" class="card-img-top" alt="...">
-             <div class="card-body">
-                <h5 class="card-title">Plancha #01</h5>
-                <a href="#" class="btn btn-primary">VOTAR</a>
-            </div>
-        </div>
-        <div class="card" style="width: 12rem;">
-        <img src="../img/Group-Vector-PNG-Clipart.png" class="card-img-top" alt="...">
-            <div class="card-body">
-            <h5 class="card-title">Plancha #02</h5>
-            <a href="#" class="btn btn-primary">VOTAR</a>
-            </div>
-        </div>
-        <div class="card" style="width: 12rem;">
-            <img src="../img/Group-Vector-PNG-Clipart.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Plancha #03</h5>
-                <a href="#" class="btn btn-primary">VOTAR</a>
-            </div>
-        </div>
-        <div class="card" style="width: 12rem;">
-            <img src="../img/Group-Vector-PNG-Clipart.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Plancha #04</h5>
-                <a href="#" class="btn btn-primary">VOTAR</a>
-            </div>
-        </div>
-        <div class="card" style="width: 12rem;">
-            <img src="../img/Group-Vector-PNG-Clipart.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Plancha #05</h5>
-                <a href="#" class="btn btn-primary">VOTAR</a>
-            </div>
-        </div>
-</div>
+        <a class="btn btn-primary"type="button" href="index.php?permiso=si">VOTAR!</a>
+        <a class="btn btn-primary" href="./php/salir.php">Salir</a>
+    </div>
 </body>
 </html>

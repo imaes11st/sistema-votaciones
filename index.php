@@ -1,5 +1,17 @@
+<?php
+  session_Start();
+
+if($_SESSION['usuario'] AND $_SESSION['cedula']){
+
+}else{
+  header("LOCATION:pages/login.php");
+}
+
+
+?>
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,40 +25,22 @@
     <link
       rel="stylesheet"
       type="text/css"
-      href="/styles/index.css"
+      href="styles/styles.css"
       media="screen"
     />
   <title>Iniciar sesion</title>
 </head>
 <body>
-  <form action="./includes/validar.php" method="post" class="containerLogin">
-    <div class="titleLogin">
-      <h1>Iniciar Sesiòn</h1>
-    </div>
-      <div method="post"class="boxForm">
-        <div class="mb-2">
-          <label class="form-label">Usuario:</label>
-          <input
-            placeholder="Nombre de usuario"
-            class="form-control"
-            name="usuario"
-            type="text"
-          />
-        </div>
-        <div class="mb-2">
-          <label class="form-label">Contraseña:</label>
-          <input 
-          placeholder="******"
-          type="password" 
-          class="form-control"
-          name="contraseña"
-          />
-      </div>
-      <input type="submit" value="Iniciar" class="btn btn-primary">
-      <br>
-      <a href="/pages/register.php">Registrar</a>
-</div>
-</form>
+  <?php
+    @$permiso=$_GET['permiso'];
+   
+    if($permiso){
+      require("php/votacion.php");
+    }else{
+      require("pages/home.php");
+    }
+
+?>
 </body>
 </html>
 
